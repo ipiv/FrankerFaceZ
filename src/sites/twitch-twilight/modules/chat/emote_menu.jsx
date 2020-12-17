@@ -2138,7 +2138,7 @@ export default class EmoteMenu extends Module {
 										onChange={this.handleFilterChange}
 										onKeyDown={this.handleKeyDown}
 									/>
-									{(no_tabs || ! is_emoji) && <div class="tw-relative tw-tooltip-wrapper tw-mg-l-1">
+									{(no_tabs || ! is_emoji) && <div class="tw-relative tw-tooltip__container tw-mg-l-1">
 										<button
 											class={`tw-align-items-center tw-align-middle tw-border-bottom-left-radius-medium tw-border-bottom-right-radius-medium tw-border-top-left-radius-medium tw-border-top-right-radius-medium tw-button-icon--primary tw-core-button tw-inline-flex tw-interactive tw-justify-content-center tw-overflow-hidden tw-relative${this.state.visibility_control ? ' tw-core-button--primary' : ' tw-button-icon'}`}
 											onClick={this.toggleVisibilityControl}

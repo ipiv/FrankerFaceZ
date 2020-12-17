@@ -53,7 +53,7 @@
 							>
 								<div
 									v-if="! p.toggled"
-									class="tw-tooltip-wrapper ffz--profile-row__icon ffz-i-cancel tw-absolute"
+									class="tw-tooltip__container ffz--profile-row__icon ffz-i-cancel tw-absolute"
 								>
 									<div class="tw-tooltip tw-tooltip--down tw-tooltip--align-right">
 										{{ t('setting.profiles.disabled', 'This profile is disabled.') }}
@@ -61,7 +61,7 @@
 								</div>
 								<div
 									v-if="p.live"
-									class="tw-tooltip-wrapper ffz--profile-row__icon ffz-i-ok tw-absolute"
+									class="tw-tooltip__container ffz--profile-row__icon ffz-i-ok tw-absolute"
 								>
 									<div class="tw-tooltip tw-tooltip--down tw-tooltip--align-right">
 										{{ t('setting.profiles.active', 'This profile is enabled and active.') }}

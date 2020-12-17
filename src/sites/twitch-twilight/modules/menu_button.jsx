@@ -295,7 +295,7 @@ export default class MenuButton extends SiteModule {
 		el = (<div
 			class={`ffz-top-nav ${is_mod ? 'ffz-mod-view-button tw-relative tw-mg-b-1' : `tw-align-self-center tw-flex-grow-0 tw-flex-nowrap tw-flex-shrink-0 tw-relative ${is_sunlight ? 'tw-mg-l-05 tw-mg-r-2' : 'tw-mg-x-05'}`}`}
 		>
-			<div class="tw-inline-flex tw-relative tw-tooltip-wrapper">
+			<div class="tw-inline-flex tw-relative tw-tooltip__container">
 				{btn = (<button
 					class={`tw-align-items-center tw-align-middle tw-border-bottom-left-radius-medium tw-border-bottom-right-radius-medium tw-border-top-left-radius-medium tw-border-top-right-radius-medium tw-button-icon tw-core-button tw-core-button--border tw-inline-flex tw-interactive tw-justify-content-center tw-overflow-hidden tw-relative${this.loading ? ' loading' : ''}`}
 					onClick={e => this.handleClick(e, btn)} // eslint-disable-line react/jsx-no-bind
@@ -314,7 +314,7 @@ export default class MenuButton extends SiteModule {
 								{ this.error.i18n ? this.i18n.t(this.error.i18n, this.error.text) : this.error.text }
 							</div>
 							<button
-								class="tw-button-icon tw-mg-l-05 tw-relative tw-tooltip-wrapper"
+								class="tw-button-icon tw-mg-l-05 tw-relative tw-tooltip__container"
 								onClick={() => this.error = null} // eslint-disable-line react/jsx-no-bind
 							>
 								<span class="tw-button-icon__icon">
@@ -472,7 +472,7 @@ export default class MenuButton extends SiteModule {
 			<div class="tw-border-radius-large tw-c-background-base tw-c-text-inherit tw-elevation-4">
 				<div class="tw-c-text-base tw-elevation-1 tw-flex tw-flex-shrink-0 tw-pd-x-1 tw-pd-y-05 tw-popover-header">
 					<div class="tw-flex tw-flex-column tw-justify-content-center tw-mg-l-05 tw-popover-header__icon-slot--left">
-						<div class="tw-inline-flex tw-relative tw-tooltip-wrapper">
+						<div class="tw-inline-flex tw-relative tw-tooltip__container">
 							<button
 								class="tw-align-items-center tw-align-middle tw-border-radius-medium tw-button-icon tw-button-icon--secondary tw-core-button tw-core-button--border tw-inline-flex tw-interactive tw-justify-content-center tw-overflow-hidden"
 								onDblClick={() => {this.emit('site.player:reset'); destroy()}} // eslint-disable-line react/jsx-no-bind
@@ -492,7 +492,7 @@ export default class MenuButton extends SiteModule {
 						</h5>
 					</div>
 					<div class="tw-flex tw-flex-column tw-justify-content-center tw-mg-l-05 tw-popover-header__icon-slot--right">
-						<div class="tw-inline-flex tw-relative tw-tooltip-wrapper">
+						<div class="tw-inline-flex tw-relative tw-tooltip__container">
 							<button
 								class="tw-align-items-center tw-align-middle tw-border-radius-medium tw-button-icon tw-button-icon--secondary tw-core-button tw-core-button--border tw-inline-flex tw-interactive tw-justify-content-center tw-overflow-hidden"
 								onClick={e => {this.openSettings(e, btn); destroy()}} // eslint-disable-line react/jsx-no-bind
